@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas Layout Website Kursus IT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h4>LUSZARK 005 BOOTCAMP</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">SOLUTIONS FOR IT MASTERY</h1>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Basic Programming</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Learn The Basics</p>
+  <p>Choose your first Language</p>
+  <p>Fits for every language</p>
+  <p>6 Months Class</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Website</h3><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Easy to Learn</p>
+  <p>CSS, JS, HTML, etc.</p>
+  <p>No need for hesitation</p>
+  <p>6 Months Class</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Data</h3><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Learn How to gain and use data</p>
+  <p>Data Mining</p>
+  <p>Data Engineer etc.</p>
+  <p>1 Year Class</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-container">
+<hr>
+<div class="w3-center">
+  <h2>Book Your Class</h2>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col w3-container m2 w3-red"><p>Jan - Feb</p></div>
+  <div class="w3-col w3-container m2 w3-blue"><p>Mar - Apr</p></div>
+  <div class="w3-col w3-container m2 w3-blue-grey"><p>Mei - June</p></div>
+  <div class="w3-col w3-container m2 w3-teal"><p>Jule - Aug</p></div>
+  <div class="w3-col w3-container m2 w3-yellow"><p>Sep - Oct</p></div>
+  <div class="w3-col w3-container m2 w3-orange"><p>Nov - Dec</p></div>
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Only Rp 1.000.000, 00 per Class</h5>
+  <p class="w3-opacity">*20% Disc for every Payment with BCA, MANDIRI, & BRI</p>
+</footer>
+
+<hr>
+<h2 class="w3-center">Meet The Masters</h2>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16">in Basic Programming</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16">in Website</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16">in Data</button>
+</div>
+
+<div id="Mr. Anatoli" class="w3-container city w3-animate-opacity">
+  <h2>Sehzade Anatoli</h2>
+  <p>Sehzade Anatoli is the world known programmer which is famous for his teams called The Arjuna, Winner of Grand Programming 2045.</p>
+  <p>His 12 years of Programming Experiences will bring you to the basic of this activity and will prepare you to adapt to every language mankind ever known.</p>
+</div>
+
+<div id="Mr. Joko" class="w3-container city w3-animate-opacity">
+  <h2>Joko Parisian Alwise</h2>
+  <p>Joko Parisian Alwise is the Head of Amazon Website Division.</p> 
+  <p>8 years of experiences on magnificent websites such as Tokopedia, Amazon, Apple, and others will make you mastering his class for a short time .</p>
+</div>
+
+<div id="Mr. Wildan" class="w3-container city w3-animate-opacity">
+  <h2>Wildan Fauzy M. H.</h2>
+  <p>Wildan Fauzy M. H. is the Founder of DataPon, The Largest Consultant in every field based on data.</p>
+  <p>His works become recognizable worl wide after resolving The Space-X Business ways with Data and Advice from his Company. With 11 years of experiences, join him in revealing the secrets of datas.</p>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Contact us at</h3>
+  <p>Geoffrey : (+1) 982-1212-9999</p>
+  <p>Our Office : White House, 1600 Pennsylvania Avenue, Northwest, Washington, District of Columbia, DC</p>
+  
+</footer>
+
+<!-- Script buat Tab from W3Schools Template -->
+<script>
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+</script>
+
+</body>
+</html>
